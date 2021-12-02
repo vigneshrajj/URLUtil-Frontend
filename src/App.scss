@@ -1,0 +1,61 @@
+$primary: #ae4ccf;
+$bg: #533535;
+$secondary: #b4c6a6;
+$font: #e6cca9;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.App {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg;
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            margin-bottom: 15px;
+            color: $font;
+            text-transform: uppercase;
+        }
+        input {
+            background-color: $secondary;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.2rem;
+            width: 250px;
+            box-sizing: border-box;
+        }
+        .switch-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $font;
+            .MuiSwitch-thumb {
+                background-color: $primary;
+            }
+            .Mui-checked + .MuiSwitch-track {
+                background-color: #ca43f7;
+            }
+        }
+        button {
+            background-color: $primary;
+            color: $font;
+            margin-top: 10px;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    }
+}

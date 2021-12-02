@@ -1,0 +1,13 @@
+{
+    "name": "URL Util",
+    "description": "A URL Utility for converting website URLs into different formats",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": ["storage", "activeTab", "scripting", "tabs"],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
